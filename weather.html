@@ -3,15 +3,23 @@
 <head>
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=308, initial-scale=1.0">
+<!-- VIEWPORT FIJO PARA FIRE OS -->
+<meta name="viewport" 
+      content="width=308, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <style>
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     width: 308px;
+    height: auto;
     overflow: hidden;
+
+    /* BLOQUEA EL AUTO-SCALING DEL AMAZON STICK */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    transform: scale(1);
+    transform-origin: top left;
   }
 </style>
 </head>
@@ -42,4 +50,5 @@
 
 </body>
 </html>
+
 
